@@ -17,6 +17,24 @@ const createRapier = (): Item => ({
 export const App = () => {
     const [items, setItems] = useState<Item[]>([tango]);
 
+    // Why doesn't this one work?
+    // const addItem = () => {
+    //     items.push(createRapier());
+    // };
+
+    // What is the problem here?
+    // const addItem = () => {
+    //     items.push(createRapier());
+    //     setItems(items);
+    // };
+
+    // Why immutability is important in React?
+    // const addItem = () => {
+    //     items.push(createRapier());
+    //     setItems([...items]);
+    // };
+    
+    // What's the difference between this and the previous one?
     const addItem = () => setItems((state) => [...state, createRapier()]);
 
     const clearInventory = () => setItems([]);

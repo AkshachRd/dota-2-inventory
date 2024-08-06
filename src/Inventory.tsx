@@ -13,7 +13,8 @@ export const Inventory = ({items}: InventoryProps) => {
                 {items.map((item) => 
                     <li key={item.id} className='item'>
                         <img src={item.iconUrl} />
-                        {item.quantity && <span className='item-quantity'>{item.quantity}</span>}
+                        {item.quantity && 
+                            <span className='item-quantity'>{item.quantity}</span>}
                     </li>
                 )}
             </ul>
