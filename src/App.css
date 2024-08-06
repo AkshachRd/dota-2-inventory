@@ -1,0 +1,11 @@
+.app {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}

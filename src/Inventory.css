@@ -1,0 +1,35 @@
+.inventory-wrapper {
+    background-image: url('./assets/inventory-background.jpg');
+    background-position: -138px -114px;
+    padding: 30px;
+}
+
+.inventory {
+    display: grid;
+    column-gap: 12px;
+    row-gap: 10px;
+    grid-template-rows: repeat(2, 82px);
+    grid-template-columns: repeat(3, 114px);
+}
+
+.item {
+    position: relative;
+    display: block;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-quantity {
+    position: absolute;
+    right: 6px;
+    bottom: 0;
+    font-weight: 800;
+    font-size:xx-large;
+    text-shadow:
+        2px 2px 4px black,
+        0 0 2em black,
+        0 0 0.4em black;
+}
