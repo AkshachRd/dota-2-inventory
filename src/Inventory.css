@@ -24,6 +24,7 @@
 
 .item-quantity {
     position: absolute;
+    color: #fff;
     right: 6px;
     bottom: 0;
     font-weight: 800;
